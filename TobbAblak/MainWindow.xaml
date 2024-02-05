@@ -9,6 +9,5 @@
     <Grid>
         <Button x:Name="UjAblak" Content="Ablak megnyitása!" HorizontalAlignment="Left" Margin="34,33,0,0" VerticalAlignment="Top" Width="120" Click="UjAblak_Click"/>
         <TextBox x:Name="FoAblak" HorizontalAlignment="Left" Margin="34,88,0,0" TextWrapping="Wrap" Text="Fő ablak" VerticalAlignment="Top" Width="120"/>
-
     </Grid>
 </Window>
