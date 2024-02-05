@@ -29,14 +29,18 @@ namespace TobbAblak
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
+            ((MainWindow)(Application.Current.MainWindow)).FoAblak.Text = AdatTxt.Text;
+            ((MainWindow)(Application.Current.MainWindow)).UjAblak.IsEnabled = true;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //Adat.Text = sz;
-            Adat.Text = ((MainWindow)(Application.Current.MainWindow)).FoAblak.Text;
+            AdatTxt.Text = ((MainWindow)(Application.Current.MainWindow)).FoAblak.Text;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(((MainWindow)(Application.Current.MainWindow)).valtozo);
         }
     }
 }

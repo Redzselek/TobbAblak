@@ -24,13 +24,14 @@ namespace TobbAblak
         {
             InitializeComponent();
         }
-
+        public string valtozo;
         private void UjAblak_Click(object sender, RoutedEventArgs e)
         {
             Window1 ujablak = new Window1(FoAblak.Text);
             UjAblak.IsEnabled = false;
+            valtozo = "asdasdasd";
             ujablak.Show();
-            Hide();
+            
         }
     }
 }
